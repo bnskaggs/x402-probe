@@ -27,7 +27,10 @@ independent replication with receipts. The prior work:
 What this adds is on-chain evidence for each, a paired control for the LLM
 result (A1 against A6, the same attack with and without one sentence), and one
 finding we couldn't find raised: the client signs whatever validity window
-the seller asks for (A7).
+the seller asks for (A7). That is filed as
+[#3614](https://github.com/x402-foundation/x402/issues/3614), and the
+facilitator datapoint is posted on
+[#786](https://github.com/x402-foundation/x402/issues/786#issuecomment-5882039733).
 
 ## Setup
 
