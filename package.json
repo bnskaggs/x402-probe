@@ -1,0 +1,31 @@
+{
+  "name": "x402-probe",
+  "version": "0.0.1",
+  "private": true,
+  "description": "An agent that pays for things over x402 on a testnet, then scripted attacks on it.",
+  "type": "module",
+  "scripts": {
+    "keygen": "tsx scripts/keygen.ts",
+    "balances": "tsx scripts/balances.ts",
+    "seller": "tsx src/seller.ts",
+    "buyer": "tsx src/buyer.ts",
+    "attack": "tsx scripts/attack.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@x402/core": "^2.27.0",
+    "@x402/evm": "^2.27.0",
+    "@x402/express": "^2.27.0",
+    "@x402/fetch": "^2.27.0",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "viem": "^2.56.9"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
